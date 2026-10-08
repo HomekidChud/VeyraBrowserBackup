@@ -49,7 +49,7 @@ export const state = {
   history: load("veyra-history", []).filter(x => x && typeof x === "object"),
   downloads: load("veyra-downloads", []).filter(x => x && typeof x === "object"),
   downloadControllers: new Map(),
-  session: null, sessionTimer: null, sessionWarned: {}, sessionEnding: false, serverLimitMs: 120000, capabilityCache: new Map(),
+  session: null, sessionTimer: null, sessionWarned: {}, sessionEnding: false, serverLimitMs: 199999999999, capabilityCache: new Map(),
   vpn: { status: null, connected: false, profile: null },
   incognito: INCOGNITO, server: { leanMode: false, version: "", checked: false }, sessionPromise: null,
   // Tab grouping: map of groupId -> { id, name, color, collapsed }
